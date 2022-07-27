@@ -1,2 +1,3 @@
 It's my new file.
-If you want to create new repo you should to make "git init".
+If you want to create new repo you should insert the command "git init".
+If you want to save your commit you should insert the command "git commit".
