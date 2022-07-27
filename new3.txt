@@ -1,0 +1,2 @@
+If you want to ctrate new branch from master you should insert the command "git branch <branch's name>".
+List of branches - "git branch -a".
