@@ -1,3 +1,5 @@
 If you want to ctrate new branch from master you should insert the command "git branch <branch's name>".
 List of branches - "git branch -a".
 Wed Jul 27 08:11:01 PM UTC 2022
+If you want to create name of commit you should insert the command "git commit -m "name of commit"".
+You can use only "git commit" and create the name of commit into the Nano editor.
