@@ -1,1 +1,3 @@
 Try to send your commits to all repositories.
+It's a simple script.
+I need to try make a hook bash script. This will help automate the process.
