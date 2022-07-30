@@ -1,0 +1,5 @@
+#!/bin/bash
+git push origin --all
+git push origin_github --all
+git push origin_bitbucket --all
+
