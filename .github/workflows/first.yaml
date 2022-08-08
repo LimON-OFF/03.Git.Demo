@@ -1,0 +1,29 @@
+name: Check remote hohsts and make reports
+
+on: [pull_request]
+
+
+jobs:
+    changes:
+      runs-on: ubuntu-latest
+      steps:
+        - name: check changed files
+          uses: actions/checkout@v3
+          with:
+          fetch-depth: 0 
+
+        - name: getting files
+          id: changed_files
+          uses: tj-actions/changed-files@v24
+
+        - name: List changed files
+          run: |
+            for file in ${{ steps.changed_files.outputs.all_changed_files }}; do
+            echo "$file was changed"
+            echo "Tabs in file $file: $(grep -P -o '\t' $file | wc -l)" >> changed_fichanged_files.tx 2>&1
+          done
+
+        - name: Upload report
+          uses: actions/upload-artifact@v3
+          with: 
+            path: changed_files.txt
